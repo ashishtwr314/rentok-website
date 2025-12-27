@@ -1,6 +1,13 @@
-import Link from "next/link"
-import Image from "next/image"
-import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from "lucide-react"
+import Link from "next/link";
+import Image from "next/image";
+import {
+  Facebook,
+  Instagram,
+  Twitter,
+  Mail,
+  Phone,
+  MapPin,
+} from "lucide-react";
 
 export function Footer() {
   return (
@@ -11,7 +18,13 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <Image src="/images/rent-ok-logo.png" alt="Rent.OK Logo" width={40} height={40} className="w-10 h-10" />
+              <Image
+                src="/images/rent-ok-logo.png"
+                alt="Rent.OK Logo"
+                width={40}
+                height={40}
+                className="w-10 h-10"
+              />
               <span className="text-2xl font-bold">Rent.OK</span>
             </div>
             <p className="text-sm text-secondary-foreground/80">
@@ -40,17 +53,26 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#features" className="hover:text-primary transition-colors">
+                <Link
+                  href="#features"
+                  className="hover:text-primary transition-colors"
+                >
                   Features
                 </Link>
               </li>
               <li>
-                <Link href="#about" className="hover:text-primary transition-colors">
+                <Link
+                  href="#about"
+                  className="hover:text-primary transition-colors"
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="#download" className="hover:text-primary transition-colors">
+                <Link
+                  href="#download"
+                  className="hover:text-primary transition-colors"
+                >
                   Download App
                 </Link>
               </li>
@@ -62,17 +84,26 @@ export function Footer() {
             <h3 className="font-semibold text-lg mb-4">Legal</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/privacy" className="hover:text-primary transition-colors">
+                <Link
+                  href="/privacy"
+                  className="hover:text-primary transition-colors"
+                >
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/terms" className="hover:text-primary transition-colors">
+                <Link
+                  href="/terms"
+                  className="hover:text-primary transition-colors"
+                >
                   Terms of Service
                 </Link>
               </li>
               <li>
-                <Link href="/refund" className="hover:text-primary transition-colors">
+                <Link
+                  href="/refund"
+                  className="hover:text-primary transition-colors"
+                >
                   Refund Policy
                 </Link>
               </li>
@@ -93,16 +124,19 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-1 flex-shrink-0" />
-                <span>Mumbai, Maharashtra, India</span>
+                <span>Jagdalpur, Chhattisgarh, India</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="mt-12 pt-8 border-t border-secondary-foreground/20 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} Rent.OK by Raunak Studio. All rights reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Rent.OK by Raunak Studio. All
+            rights reserved.
+          </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }
